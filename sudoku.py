@@ -134,7 +134,6 @@ class Board:
 	def generateQuestionBoard(self, fullBoard, difficulty): # generates a question board with a certain amount of numbers removed depending on the chosen difficulty
 			self.board = copy.deepcopy(fullBoard)
 			
-			print('[+] Generating board with {} difficulty'.format(difficulty))
 			if difficulty == 0:
 				_squares_to_remove = 36
 			elif difficulty == 1:
@@ -184,7 +183,6 @@ class Board:
 
 					_counter += 1
 
-			print('[+] Done generating board')
 			return self.board, fullBoard
 
 
